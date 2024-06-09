@@ -7,3 +7,8 @@ Todo
 - [ ] 즐겨찾기기능
 - [ ] 스크롤
 - [ ] 디시콘 gif 지원
+- [ ] 속도개선
+- [ ] UI 개선
+
+아래의 파일을 수정함
+https://github.com/iamjjintta-python/dccon-downloader

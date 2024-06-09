@@ -156,15 +156,15 @@ class SubWindow(QWidget):
         
         
         
-        if ext == 'gif':
-            btn = self.gifbtn(image)
-        else:
-            btn = QPushButton()
-            pimg = QPixmap()
-            pimg.loadFromData(image)
-            ico = QIcon()
-            ico.addPixmap(pimg)
-            btn.setIcon(ico)
+        # if ext == 'gif':
+        #     btn = self.gifbtn(image)
+        # else:
+        #     btn = QPushButton()
+        #     pimg = QPixmap()
+        #     pimg.loadFromData(image)
+        #     ico = QIcon()
+        #     ico.addPixmap(pimg)
+        #     btn.setIcon(ico)
         
         def imgtoclipboard(image,ext):
             with open(f'./dump.{ext}','r+b') as file:
@@ -189,13 +189,13 @@ class SubWindow(QWidget):
             # cb.setMimeData(qmime)
 
 
-        # btn = QPushButton()
-        # pimg = QPixmap()
+        btn = QPushButton()
+        pimg = QPixmap()
         # print(image)
-        # pimg.loadFromData(image)
-        # ico = QIcon()
-        # ico.addPixmap(pimg)
-        # btn.setIcon(ico)
+        pimg.loadFromData(image)
+        ico = QIcon()
+        ico.addPixmap(pimg)
+        btn.setIcon(ico)
         btn.setFixedHeight(100)
         btn.setFixedWidth(100)
         btn.setIconSize(QSize(100,100))
